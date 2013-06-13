@@ -1,10 +1,15 @@
 var MyApp = angular.module("myApp",[]);
 
 MyApp.factory("Data",function(){
-    return {message: $("#txtInput").val()};
+    var text=$("#txtInput").val();
+    return {message: text};
 });
 
 
+function TextController($scope) {
+    $scope.myInput="Sandesh";
+}
+
 function DisplayController($scope,Data){
-    $scope.data=Data;
+    $scope.myOutput=Data;
 }
