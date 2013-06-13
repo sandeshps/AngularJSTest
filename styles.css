@@ -1,0 +1,38 @@
+.container {
+    margin:auto;
+    width: 980px;   
+    border: 1px solid black;
+}
+
+
+.body {
+    height:100%;
+}
+
+.display-box {
+    margin : auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    height:250px;
+    width:250px;
+    align-content:center;    
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+}
+
+.allignment {     
+    margin-left:425px;
+} 
+
+
+.label {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+}
