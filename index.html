@@ -14,15 +14,16 @@
             </div>
             <div ng-controller="TextController">
                 <div class="allignment"> <!-- Text box -->
-                    <input type="text" id="txtInput" ng-model="text">    
+                    <input type="text" id="txtInput" ng-model="myInput">    
                      
                 </div>
             </div>
-            
             <div ng-controller="DisplayController">
-               <div class="display-box">  <!-- Text output  -->
-                   
-               </div> 
+                <div class="display-box" ng-model="myOutput">
+                <!--   <div class="display-box">  <!-- Text output  
+                       
+                   </div> -->
+                </div>
             </div>
                
             
