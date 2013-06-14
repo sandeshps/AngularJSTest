@@ -1,8 +1,7 @@
 var MyApp = angular.module("myApp",[]);
 
 MyApp.factory("Data",function(){
-    
-    return {message: $scope.myInput.Text};
+    return {$scope.myInput.Text};
 });
 
 
@@ -11,5 +10,5 @@ function TextController($scope) {
 }
 
 function DisplayController($scope,Data){
-    $scope.myOutput=Data;
+    $scope.myOutput=Data;    
 }
