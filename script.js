@@ -1,8 +1,8 @@
 var MyApp = angular.module("myApp",[]);
 
 MyApp.factory("Data",function(){
-    var text=$("#txtInput").val();
-    return {message: text};
+    
+    return {message: $scope.myInput.Text};
 });
 
 
