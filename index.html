@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="angular.js"></script>
-    <script src="script.js" type="text/javascript"></script>
-    <title> Jquery example </title>
-</head>
-<body class="body">
-    <div ng-app="myApp">
-        <div class="container">
-            <div class="allignment">  <!-- Label -->
-                Enter text below
-            </div>
-            <div ng-controller="TextController">
-                <div class="allignment"> <!-- Text box -->
-                    <input type="text" id="txtInput" ng-model="myInput">    
-                     
-                </div>
-            </div>
-            <div ng-controller="DisplayController">
-                <div class="display-box" ng-model="myOutput">
-                <!--   <div class="display-box">  <!-- Text output </div> -->
-                    {{text}}
-                </div>
-            </div>
-               
-            
-            <div class="allignment label" id="output"> <!-- Value output -->            
-            </div>        
-        </div>   
-    </div> 
-</body>
+    <head>
+        <title>Angular JS</title>
+        <script src="angular.js"></script>
+        <script scr="script.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body ng-app="">
+         <div class="container" ng-controller="Control">
+             <div class="label">
+                 Enter the text
+             </div>
+             <div class="allignment">
+                 <input type="text" ng-model="text">
+             </div>    
+             <div class="display-box">
+                 {{display.text}}
+             </div>
+             <div class="label">
+             </div>
+        </div>
+    </body>
 </html>
