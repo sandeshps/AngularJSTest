@@ -5,10 +5,6 @@ MyApp.factory("Data",function(){
 });
 
 
-function TextController($scope) {
-    $scope.myInput="Sandesh";
-}
-
-function DisplayController($scope,Data){
-    $scope.myOutput=Data;    
-}
+function Control($scope) {
+            $scope.display={text:"hello"};
+           }
